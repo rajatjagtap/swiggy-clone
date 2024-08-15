@@ -25,7 +25,6 @@ export default function Card(props) {
       <div className="text-slate-600">{props.name}</div>
       <div className="text-slate-600">{props.place}</div>
     </div>
-     
   );
 }
 
