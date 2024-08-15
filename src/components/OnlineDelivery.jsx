@@ -7,7 +7,7 @@ export default function OnlineDelivery() {
   const [chains, setChains] = useState([]);
 
   const fetchChains = async () => {
-    const response = await fetch("http://localhost:5000/restaurantChains");
+    const response = await fetch("https://swiggy-clone-lkmd.onrender.com/restaurantChains");
     const data1 = await response.json();
     setChains(data1);
   };

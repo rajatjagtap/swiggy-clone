@@ -8,8 +8,9 @@ export default function Category() {
   const [categories, setCategores] = useState([]);
 
   const fetchCategories = async () => {
-    const response = await fetch("http://localhost:5000/categories");
+    const response = await fetch("https://swiggy-clone-lkmd.onrender.com/categories");
     const data = await response.json();
+    console.log("cate--",data,response);
     setCategores(data);
   };
 
@@ -56,7 +57,7 @@ export default function Category() {
                 transform: `translateX(-${slide * 100}%)`,
               }}
             >
-              <img src={"http://localhost:5000/images/" + cat.image} alt="" />
+              <img src={"https://swiggy-clone-lkmd.onrender.com/images/" + cat.image} alt="" />
             </div>
           );
         })}
