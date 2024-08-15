@@ -21,7 +21,7 @@ export default function Header() {
   const links = [
     {
       icon: <IoIosSearch />,
-      name: "search",
+      name: "Search",
     },
     {
       icon: <RiDiscountPercentLine />,
@@ -34,7 +34,7 @@ export default function Header() {
     },
     {
       icon: <LiaSignInAltSolid />,
-      name: "SignIn",
+      name: "Sign In",
     },
     {
       icon: <TfiShoppingCartFull />,
@@ -44,7 +44,7 @@ export default function Header() {
 
   return (
     <>
-      {/* div: for dropdown */}
+      
       <div
         className="black-overlay z-[9999] w-full h-full fixed duration-500"
         onClick={HideSideMenu}
@@ -71,13 +71,13 @@ export default function Header() {
         {/* div:for placing various header elements */}
         <div className="max-w-[1200px] mx-auto flex">
           {/* div: for logo */}
-          <div className="w-[100px]">
-            <img src="images/logo.png" alt="" className="w-full" />
+          <div className="w-[100px] flex items-center">
+            <img src="images/logo.png" alt="" className="w-full h-[80%]" />
           </div>
 
           {/* div:span items */}
           <div className="flex-row justify-center mt-8">
-            <span className="font-bold border-b-[3px] border-[black]">
+            <span className="font-bold border-b-[3px] border-[black] hover:text-[#fc8019] cursor-pointer">
               Hinjawadi
             </span>
             <span className="ml-2">

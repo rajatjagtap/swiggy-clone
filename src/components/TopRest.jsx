@@ -9,7 +9,9 @@ export default function TopRest() {
   const [chains, setChains] = useState([]);
 
   const fetchChains = async () => {
-    const response = await fetch("https://swiggy-clone-lkmd.onrender.com/restaurantChains");
+    const response = await fetch(
+      "https://swiggy-clone-lkmd.onrender.com/restaurantChains"
+    );
     const data1 = await response.json();
     setChains(data1);
   };
@@ -34,6 +36,7 @@ export default function TopRest() {
   };
 
   return (
+    <>
     <div className="max-w-[1200px] mx-auto">
       <div className="flex my-3 items-center justify-between">
         <div className="text-[25px] font-bold">
@@ -67,12 +70,13 @@ export default function TopRest() {
                 transform: `translateX(-${slide * 100}%)`,
               }}
             >
-              <Card {...d} key={i} />;
+              <Card {...d} key={i} />
             </div>
-          );
+          )
         })}
       </div>
       <hr className="my-6 border-[1px]" />
     </div>
+    </>
   );
 }
