@@ -86,13 +86,13 @@ export default function Header() {
           </div>
 
           {/* dropdown */}
-          <RxCaretDown
+          {/* <RxCaretDown
             onClick={ShowSideMenu}
             font-size={25}
             className="font-bold mt-8  text-[#ff5200]"
-          />
+          /> */}
 
-          <nav className="flex list-none gap-10  ml-auto text-[18px] font-semibold">
+          <nav className=" hidden  md:flex list-none gap-10  ml-auto text-[18px] font-semibold">
             {links.map((link, index) => {
               return (
                 <li
